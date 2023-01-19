@@ -12,41 +12,47 @@ public class Quiz_game {
 		System.out.println("Let our game begin!");
 		System.out.print("1. What is the Center of the Earth? ");
 		String answer1 = x.nextLine();
-		
+		int score = 0;
 		if(answer1 .equalsIgnoreCase("core")){
 			System.out.println("The answer is correct!");
+			score ++;
 		} else{
-			System.out.println("Wrong!");
+			System.out.println("BOBO MAlI!");
 		}
 		System.out.print("2. Who wrote Noli me Tangere? ");
 		String answer2 = x.nextLine();
 		
 		if(answer2 .equalsIgnoreCase("Jose Rizal")) {
 			System.out.println("The answer is correct!");
+			score ++;
 		}else {
-			System.out.println("Wrong!");
+			System.out.println("BOBO MALI!");
 		}
 		System.out.print("3. 20 + 21 = ? ");
 		int answer3 = x.nextInt();
 		if(answer3 == 41) {
 			System.out.println("The answer is correct!");
+			score ++;
 		}else {
-			System.out.println("Wrong!");
+			System.out.println("BOBO MALI!");
 		}
 		System.out.print("4. How many internal organs do humans have? ");
 		int answer4 = x.nextInt();
 		if(answer4 == 78) {
 			System.out.println("The answer is correct!");
+			score ++;
 		}else {
-			System.out.println("Wrong!");
+			System.out.println("BOBO MALI!");
 		}
 		System.out.print("5. How many seconds have in a day? ");
 		int answer5 = x.nextInt();
 		if(answer5 == 86400) {
 			System.out.println("The answer is correct!");
+			score ++;
 		}else {
-			System.out.println("Wrong!");
+			System.out.println("BOBO MALI!");
 		}
+		System.out.println("total score is: " + score);
 	}
 
 }
